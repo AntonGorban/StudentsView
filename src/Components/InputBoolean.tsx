@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const InputBoolean = React.memo<InputBooleanProps>(
   ({ placeholder, value, onChange }) => (
     <SWrap>
-      <SLabel>{placeholder}</SLabel>
+      <SLabel htmlFor={`checkbox.${placeholder}`}>{placeholder}</SLabel>
 
-      <SInput checked={value} onChange={onChange} type="checkbox" />
+      <SInput checked={value} onChange={onChange} type="checkbox" id={`checkbox.${placeholder}`} />
     </SWrap>
   ),
 

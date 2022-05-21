@@ -10,7 +10,7 @@ export const Modal: React.FC<ModelProps> = ({ title, isOpen, close, children }) 
       <SFlex gap="15px" justify="space-between" align="center" width="100%">
         <STitle>{title}</STitle>
 
-        <SCloseButton onClick={close}>close</SCloseButton>
+        <SCloseButton onClick={close}>Закрыть</SCloseButton>
       </SFlex>
 
       {children}

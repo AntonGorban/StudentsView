@@ -41,10 +41,10 @@ export const NewStudentForm: React.FC<NewStudentFormProps> = ({ createStudent, i
       isBudget={isBudget}
       toggleIsBudget={toggleIsBudget}
       submit={submitHandler}
-      title={"Создание нового студента"}
+      title={"Добавление нового студента"}
       isOpen={isOpen}
       close={close}
-      submitText={"Создать нового студента"}
+      submitText={"Добавить нового студента"}
     />
   );
 };

@@ -14,9 +14,9 @@ export const Home: React.FC = () => {
   return (
     <>
       <SFlex justify="space-around" align="center">
-        <STitle>Students List</STitle>
+        <STitle>Список студентов</STitle>
 
-        <button onClick={open}>New student</button>
+        <button onClick={open}>Добавить студента</button>
       </SFlex>
 
       <NewStudentForm createStudent={addStudent} close={close} isOpen={isOpen} />

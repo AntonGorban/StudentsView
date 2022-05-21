@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { AppPresentation } from "./App.Presentation";
+import { Home } from "./Components/Home";
 
 function render() {
   ReactDOM.render(
     <React.StrictMode>
-      <AppPresentation />
+      <Home />
     </React.StrictMode>,
     document.body
   );
