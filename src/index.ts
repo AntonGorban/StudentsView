@@ -19,7 +19,7 @@ const createWindow = (): void => {
     width: 1024,
     height: 576,
 
-    backgroundColor: "#1d1d1d",
+    backgroundColor: "#2d2d2d",
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,
