@@ -20,7 +20,8 @@
   "config": {
     "forge": {
       "packagerConfig": {},
-      "makers": [{
+      "makers": [
+        {
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "studentsview"
@@ -48,11 +49,13 @@
             "mainConfig": "./webpack.main.config.js",
             "renderer": {
               "config": "./webpack.renderer.config.js",
-              "entryPoints": [{
-                "html": "./src/index.html",
-                "js": "./src/renderer.ts",
-                "name": "main_window"
-              }]
+              "entryPoints": [
+                {
+                  "html": "./src/index.html",
+                  "js": "./src/renderer.ts",
+                  "name": "main_window"
+                }
+              ]
             }
           }
         ]
@@ -68,6 +71,7 @@
     "@electron-forge/plugin-webpack": "^6.0.0-beta.63",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
@@ -87,6 +91,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-modal": "^3.15.1",
     "styled-components": "^5.3.5"
   }
 }
