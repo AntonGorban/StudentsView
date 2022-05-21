@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useModal } from "../hooks/useModal";
 import { useStudents } from "../hooks/useStudents";
 import { NewStudentForm } from "./NewStudentForm";
+import { StudentsTable } from "./StudentsTable";
 import { SFlex } from "./Styled";
 
 export const Home: React.FC = () => {
@@ -20,9 +21,11 @@ export const Home: React.FC = () => {
 
       <NewStudentForm createStudent={addStudent} close={close} isOpen={isOpen} />
 
-      {students.map((student) => (
-        <pre>{JSON.stringify(student)}</pre>
-      ))}
+      {!!students.length ? (
+        <StudentsTable students={students} updateStudent={updateStudent} removeStudent={removeStudent} />
+      ) : (
+        <h3 style={{ textAlign: "center" }}>Студентов нет</h3>
+      )}
     </>
   );
 };

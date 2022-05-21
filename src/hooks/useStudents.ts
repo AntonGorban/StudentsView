@@ -12,7 +12,7 @@ export const useStudents = () => {
       prev.map((student, studentIdx) => (studentIdx !== idx ? student : { ...student, ...updatedStudent }))
     );
 
-  const removeStudent = (idx: number) =>
+  const removeStudent = (idx: number) => () =>
     setStudents((prev) => prev.filter((student, studentIdx) => studentIdx !== idx));
 
   return {
